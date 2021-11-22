@@ -1,42 +1,42 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(PEACH_COUNT)
+    basic.showNumber(Grape__Strawberry__Count)
 })
 input.onButtonPressed(Button.AB, function () {
-    PEACH_COUNT = 1
-    MANGO_COUNT = 1
+    Grape__Strawberry__Count = 1
+    Peach__Wild_Berry__Count = 1
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "PEACH") {
-        if (PEACH_COUNT == 1) {
-            PEACH_COUNT += -1
-            basic.showNumber(PEACH_COUNT)
+        if (Grape__Strawberry__Count == 1) {
+            Grape__Strawberry__Count += -1
+            basic.showNumber(Grape__Strawberry__Count)
         }
-        if (PEACH == true) {
-            PEACH = false
-        } else if (PEACH == false) {
-            PEACH = true
+        if (Grape__Strawberry == true) {
+            Grape__Strawberry = false
+        } else if (Grape__Strawberry == false) {
+            Grape__Strawberry = true
         }
     }
     if (receivedString == "MANGO") {
-        if (MANGO_COUNT == 1) {
-            MANGO_COUNT += -1
-            basic.showNumber(MANGO_COUNT)
+        if (Peach__Wild_Berry__Count == 1) {
+            Peach__Wild_Berry__Count += -1
+            basic.showNumber(Peach__Wild_Berry__Count)
         }
-        if (MANGO == true) {
-            MANGO = false
-        } else if (MANGO == false) {
-            MANGO = true
+        if (Peach__Wild_Berry == true) {
+            Peach__Wild_Berry = false
+        } else if (Peach__Wild_Berry == false) {
+            Peach__Wild_Berry = true
         }
     }
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(MANGO_COUNT)
+    basic.showNumber(Peach__Wild_Berry__Count)
 })
-let MANGO = false
-let PEACH = false
-let MANGO_COUNT = 0
-let PEACH_COUNT = 0
+let Peach__Wild_Berry = false
+let Grape__Strawberry = false
+let Peach__Wild_Berry__Count = 0
+let Grape__Strawberry__Count = 0
 basic.showIcon(IconNames.Rabbit)
 radio.setGroup(69)
-PEACH_COUNT = 1
-MANGO_COUNT = 1
+Grape__Strawberry__Count = 1
+Peach__Wild_Berry__Count = 1
