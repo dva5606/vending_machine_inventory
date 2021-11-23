@@ -1,20 +1,20 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showNumber(Grape__Strawberry__Count)
+    basic.showNumber(Cherry__Watermelon__Count)
 })
 input.onButtonPressed(Button.AB, function () {
-    Grape__Strawberry__Count = 1
-    Peach__Wild_Berry__Count = 1
+    Cherry__Watermelon__Count = 2
+    Peach__Wild_Berry__Count = 2
 })
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "PEACH") {
-        if (Grape__Strawberry__Count == 1) {
-            Grape__Strawberry__Count += -1
-            basic.showNumber(Grape__Strawberry__Count)
+        if (Cherry__Watermelon__Count == 1) {
+            Cherry__Watermelon__Count += -1
+            basic.showNumber(Cherry__Watermelon__Count)
         }
-        if (Grape__Strawberry == true) {
-            Grape__Strawberry = false
-        } else if (Grape__Strawberry == false) {
-            Grape__Strawberry = true
+        if (Cherry__Watermelon == true) {
+            Cherry__Watermelon = false
+        } else if (Cherry__Watermelon == false) {
+            Cherry__Watermelon = true
         }
     }
     if (receivedString == "MANGO") {
@@ -33,10 +33,10 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(Peach__Wild_Berry__Count)
 })
 let Peach__Wild_Berry = false
-let Grape__Strawberry = false
+let Cherry__Watermelon = false
 let Peach__Wild_Berry__Count = 0
-let Grape__Strawberry__Count = 0
+let Cherry__Watermelon__Count = 0
 basic.showIcon(IconNames.Rabbit)
 radio.setGroup(69)
-Grape__Strawberry__Count = 1
-Peach__Wild_Berry__Count = 1
+Cherry__Watermelon__Count = 2
+Peach__Wild_Berry__Count = 2
